@@ -15,6 +15,7 @@ button.addEventListener("click", (e) => {
    const todo = new todos(id, input.value);
    todolist = [...todolist, todo];
    console.log(todo);
+    input.value = "";
     console.log(todolist);
    showlist(todo.todo, todo.id);
 });
