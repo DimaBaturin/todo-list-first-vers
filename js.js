@@ -11,6 +11,9 @@ class todos{
 }
 
 button.addEventListener("click", (e) => {
+    if(!input.value){
+        return 0;
+    }
     let id = Math.trunc(Math.random() * 3212312313212)
    const todo = new todos(id, input.value);
    todolist = [...todolist, todo];
